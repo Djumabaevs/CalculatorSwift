@@ -23,7 +23,12 @@ class ViewController: UIViewController {
     
     @IBAction func plusClick(_ sender: Any)
     {
+        let firstNumber = Int(textFiledOne.text!)!
+        let secondNumber = Int(textFiledTwo.text!)!
         
+        let result = firstNumber + secondNumber
+        
+        resultLAbel.text = String(result)
         
     }
     
