@@ -22,13 +22,24 @@ class ViewController: UIViewController {
 
     
     @IBAction func plusClick(_ sender: Any)
+    
     {
-        let firstNumber = Int(textFiledOne.text!)!
-        let secondNumber = Int(textFiledTwo.text!)!
         
-        let result = firstNumber + secondNumber
+        if let firstNumber = Int(textFiledOne.text!) {
+            if let secondNumber = Int(textFiledTwo.text!) {
+                let result = firstNumber + secondNumber
+                resultLAbel.text = String(result)
+            }
+        }
         
-        resultLAbel.text = String(result)
+        
+        
+//        let firstNumber = Int(textFiledOne.text!)!
+//        let secondNumber = Int(textFiledTwo.text!)!
+//
+//        let result = firstNumber + secondNumber
+//
+//        resultLAbel.text = String(result)
         
     }
     
