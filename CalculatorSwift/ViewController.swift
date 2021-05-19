@@ -30,6 +30,8 @@ class ViewController: UIViewController {
                 let result = firstNumber + secondNumber
                 resultLAbel.text = String(result)
             }
+        } else {
+            resultLAbel.text = "please enter a number"
         }
         
         
@@ -44,19 +46,40 @@ class ViewController: UIViewController {
     }
     
     @IBAction func minusClick(_ sender: Any) {
-        
+        if let firstNumber = Int(textFiledOne.text!) {
+            if let secondNumber = Int(textFiledTwo.text!) {
+                let result = firstNumber - secondNumber
+                resultLAbel.text = String(result)
+            }
+        } else {
+            resultLAbel.text = "please enter a number"
+        }
         
     }
     
     
     @IBAction func multiplyClick(_ sender: Any) {
-        
+        if let firstNumber = Int(textFiledOne.text!) {
+            if let secondNumber = Int(textFiledTwo.text!) {
+                let result = firstNumber * secondNumber
+                resultLAbel.text = String(result)
+            }
+        } else {
+            resultLAbel.text = "please enter a number"
+        }
         
     }
     
     
     @IBAction func divideClick(_ sender: Any) {
-        
+        if let firstNumber = Int(textFiledOne.text!) {
+            if let secondNumber = Int(textFiledTwo.text!) {
+                let result = firstNumber / secondNumber
+                resultLAbel.text = String(result)
+            }
+        } else {
+            resultLAbel.text = "please enter a number"
+        }
         
     }
     
